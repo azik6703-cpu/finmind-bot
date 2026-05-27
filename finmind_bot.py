@@ -9,8 +9,8 @@ from datetime import datetime
 # =============================================
 # ВСТАВЬ СЮДА СВОИ КЛЮЧИ
 # =============================================
-TELEGRAM_TOKEN = "YOUR_TELEGRAM_TOKEN"
-ANTHROPIC_API_KEY = "YOUR_ANTHROPIC_KEY"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 # =============================================
 
 logging.basicConfig(level=logging.INFO)
